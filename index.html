@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul_4</title>
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+
+    <script>
+        a = parseInt(prompt("a:"));
+        b = parseInt(prompt("b:"));
+        c = parseInt(prompt("c:"));
+        if ((b < a && a < c) || (c < a && a < b)) alert(a);
+        if ((a < b && b < c) || (c < b && b < a)) alert(b);
+        if ((a < c && c < b) || (b < c && c < a)) alert(c);	
+    </script>
+
+    <h2>Конвертация температуры</h2>
+    <input type="text" id="CelFah">
+    <button onclick="celsiusToFahrenheit()">Перевести</button>
+    <br>
+    <p id="out">Результат</p>
+
+
+</body>
+
+</html>
